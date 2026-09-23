@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+:root {
+  --bg-space: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-card: #ffffff;
+  --border-cyan: rgba(0, 176, 229, 0.3);
+  --border-slate: #e2e8f0;
+  --hiway-navy: #05335c;
+  --hiway-blue: #05477d;
+  --hiway-cyan: #00b0e5;
+  --hiway-light-cyan: #21ceff;
+  --hiway-red: #e31c23;
+  --accent-cyan: #00b0e5;
+  --accent-blue: #05477d;
+  --accent-green: #21ceff;
+}
+
+html, body {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism & Card Utility Classes */
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(5, 51, 92, 0.06);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -4px rgba(0, 176, 229, 0.2);
+}
+
+/* White Cards with Hiway Brand Gradient Border Lines */
+.gradient-border-box {
+  background: #ffffff;
+  border-radius: 1.75rem;
+  padding: 2.25rem 2rem;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #05335c 0%, #05477d 35%, #00b0e5 70%, #21ceff 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 12px 36px -6px rgba(5, 71, 125, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradient-border-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 46px -8px rgba(0, 176, 229, 0.25);
+}
+
+.gradient-border-box-emerald {
+  background: #ffffff;
+  border-radius: 1.75rem;
+  padding: 2.25rem 2rem;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #05477d 0%, #00b0e5 50%, #21ceff 80%, #e31c23 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 12px 36px -6px rgba(0, 176, 229, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradient-border-box-emerald:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 46px -8px rgba(227, 28, 35, 0.2);
+}
+
+/* Vibrant Gradient Card Class with White Text */
+.card-gradient-blue-emerald {
+  background: linear-gradient(135deg, #05335c 0%, #05477d 40%, #00b0e5 100%);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 32px -4px rgba(5, 51, 92, 0.3);
+}
+
+.card-gradient-slate-blue {
+  background: linear-gradient(135deg, #031e38 0%, #05335c 50%, #05477d 100%);
+  color: #ffffff !important;
+  border: 1px solid rgba(0, 176, 229, 0.3);
+  box-shadow: 0 12px 32px -4px rgba(3, 30, 56, 0.35);
+}
+
+.card-gradient-sky-green {
+  background: linear-gradient(135deg, #05477d 0%, #00b0e5 60%, #21ceff 100%);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 32px -4px rgba(0, 176, 229, 0.25);
+}
+
+/* Background Glows */
+.cyber-glow-cyan {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 176, 229, 0.16) 0%, rgba(0, 176, 229, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.cyber-glow-green {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(33, 206, 255, 0.14) 0%, rgba(33, 206, 255, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Hiway Brand Gradient Button Utility */
+.btn-gradient {
+  background: linear-gradient(135deg, #05335c 0%, #05477d 35%, #00b0e5 70%, #21ceff 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px 0 rgba(5, 71, 125, 0.35);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #032240 0%, #05335c 35%, #0096c7 70%, #00b0e5 100%);
+  box-shadow: 0 6px 22px 0 rgba(0, 176, 229, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(135deg, #05477d 0%, #00b0e5 60%, #21ceff 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px 0 rgba(0, 176, 229, 0.35);
+}
+
+.btn-gradient-secondary:hover {
+  background: linear-gradient(135deg, #05335c 0%, #05477d 60%, #00b0e5 100%);
+  box-shadow: 0 6px 22px 0 rgba(5, 71, 125, 0.45);
+  transform: translateY(-1px);
+}
+
+/* Gradient Text Utilities */
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #05335c 0%, #05477d 30%, #00b0e5 70%, #21ceff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #00b0e5 0%, #21ceff 50%, #e31c23 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b0e5;
+}
+
