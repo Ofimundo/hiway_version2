@@ -169,101 +169,101 @@ export const SERVICES: ServiceItem[] = [
     id: "consultoria-negocio",
     title: "Servicios de Consultoría de Negocio",
     category: "consulting",
-    subtitle: "Estrategia digital y aceleración del crecimiento empresarial",
-    description: "Evaluamos y diseñamos hojas de ruta tecnológicas alineadas con la estrategia de negocios de nuestros clientes, potenciando la creación de valor compartido y operaciones de alto rendimiento.",
+    subtitle: "Hi-Digital Consulting, Transformación Digital & Hi-Revenue Growth",
+    description: "Ayudamos a las organizaciones a gestionar las mejores herramientas del mercado, abarcando transformación digital, inmersión tecnológica e Hi-Revenue Growth para externalizar la capacidad de correlación y análisis de datos del negocio de forma segura y confiable.",
     iconName: "Briefcase",
-    badge: "Estratégico",
+    badge: "Hi-Digital Consulting",
     features: [
-      "Diseño de arquitectura empresarial y transformación digital",
-      "Modelado de procesos bajo metodologías ITIL y PMP",
-      "Análisis de brechas tecnológicas y retorno de inversión (ROI)",
-      "Acompañamiento peer-to-peer en la toma de decisiones"
+      "Transformación Digital e Inmersión Tecnológica alineada al negocio",
+      "Hi-Revenue Growth: correlación y análisis de datos para resolver desafíos estratégicos",
+      "Centrados en el valor de los resultados y eficiencia operativa",
+      "Acompañamiento peer-to-peer bajo estándares ITIL, PMP y PMI"
     ],
     specs: [
-      { label: "Metodología", value: "Agile / Tradicional / Híbrida" },
-      { label: "Certificación", value: "PMP & PMI Capable" },
-      { label: "Enfoque", value: "Estratégico Negocios" }
+      { label: "Enfoque", value: "Transformación Digital" },
+      { label: "Solución", value: "Hi-Revenue Growth" },
+      { label: "Certificación", value: "ITIL / PMP / PMI" }
     ],
     brochureSlug: "security-technology-consulting"
   },
   {
     id: "servicios-gestionados",
-    title: "Servicios Gestionados & NOC 24/7",
+    title: "Servicios Gestionados (Hi-SOC & NOC)",
     category: "managed",
-    subtitle: "Operación ininterrumpida de infraestructura de TI y telecomunicaciones",
-    description: "Monitoreo continuo de redes, servidores y aplicaciones con ingenieros certificados L1-L3 y cumplimiento de estrictos Acuerdos de Nivel de Servicio (SLA).",
+    subtitle: "Administración remota de infraestructura, Hi-SOC y Mesa de Servicios",
+    description: "Diseñados para gestionar, administrar y operar la infraestructura tecnológica de nuestros clientes de forma remota, asegurando disponibilidad, eficiencia operacional y seguridad continua.",
     iconName: "Headphones",
-    badge: "NOC 24/7",
+    badge: "Hi-SOC / NOC 24/7",
     features: [
-      "Mesa de Servicios unificada (Teléfono, Email, WhatsApp, Portal)",
-      "Gestión de incidentes y problemas bajo estándar ITIL v4",
-      "Atención ininterrumpida los 365 días del año",
-      "Generación de informes periódicos de desempeño y disponibilidad"
+      "Hi-SOC (Hi-Security Operations Center): detección, análisis y respuesta rápida ante incidentes",
+      "Monitoreo en línea de equipos TIC y continuidad operativa del negocio",
+      "Mesa de Servicios unificada (+56 2 2940 7502 / asistencia@cxhiway.com)",
+      "Gestión de incidentes y problemas bajo mejores prácticas ITIL"
     ],
     specs: [
       { label: "Mesa de Servicios", value: "+56 2 2940 7502" },
-      { label: "Atención Urgencias", value: "+56 9 4255 1631" },
-      { label: "SLA Nivel 1", value: "Respuesta en < 15 min" }
+      { label: "Celular Soporte", value: "+56 9 4255 1631" },
+      { label: "Operación", value: "Continua 24/7" }
     ],
     brochureSlug: "servicios-gestionados"
   },
   {
     id: "servicios-profesionales",
-    title: "Servicios Profesionales Especializados",
+    title: "Servicios Profesionales",
     category: "consulting",
-    subtitle: "Ejecución experta de proyectos de ingeniería e infraestructura TI",
-    description: "Despliegue de proyectos complejos por parte de un equipo multidisciplinario altamente calificado con certificaciones internacionales.",
+    subtitle: "Asesoría especializada y consultoría empresarial de alto nivel",
+    description: "Orientados a brindar asesoría especializada y consultoría empresarial de la mano de un equipo de destacados profesionales para garantizar la continuidad operativa y el éxito de tus proyectos.",
     iconName: "UserCheck",
-    badge: "Ingeniería Experta",
+    badge: "Ingeniería Certificada",
     features: [
-      "Implementación de redes y plataformas de colaboración (Cisco)",
-      "Integración de sistemas multimarca y migración de datos",
-      "Gestión de proyectos con metodología PMP",
-      "Pruebas de aceptación y puesta en marcha asegurada"
+      "Ejecución de proyectos con metodologías Tradicional, Agile o Híbrida",
+      "Profesionales certificados en PMI, PMP, PMI-CAPM e ITIL",
+      "Integración tecnológica con alianzas líderes (Cisco, Fortinet, Microsoft, Trellix)",
+      "Acompañamiento integral desde el diseño hasta la puesta en marcha"
     ],
     specs: [
-      { label: "Equipo", value: "Ingenieros Certificados" },
-      { label: "Calidad", value: "Control de Calidad PMP" },
-      { label: "Experiencia", value: "+16 Años en Mercado" }
+      { label: "Equipo", value: "Especialistas Certificados" },
+      { label: "Metodologías", value: "Tradicional / Agile / Híbrida" },
+      { label: "Cobertura", value: "Chile & México" }
     ]
   },
   {
     id: "soluciones-digitales",
-    title: "Soluciones Tecnológicas Digitales",
+    title: "Soluciones Tecnológicas Digitales & Hi-Automation",
     category: "infrastructure",
-    subtitle: "Innovación aplicada a los procesos centrales del negocio",
-    description: "Desarrollo e integración de herramientas digitales de vanguardia diseñadas para acelerar la innovación y aumentar la competitividad.",
+    subtitle: "Hi-Automation, Cloud Management, Cloud Migration & Industria X",
+    description: "Soluciones integrales e innovadoras orientadas a potenciar y proteger los negocios en áreas críticas como Cloud (Hi-Cloud), Automatización de procesos (Hi-Automation) e Industria X.",
     iconName: "Cpu",
-    badge: "Innovación Digital",
+    badge: "Hi-Automation & Hi-Cloud",
     features: [
-      "Integración de plataformas cloud e híbridas",
-      "Automatización de flujos de trabajo operativos",
-      "Soluciones de telefonía IP y colaboración remota",
-      "Habilitadores de transformación digital acelerada"
+      "Hi-Automation: análisis y automatización de flujos de trabajo según reglas de negocio",
+      "Reducción de tiempos, errores y recursos acelerando el retorno de inversión (ROI)",
+      "Hi-Cloud: gestión y migración en entornos híbridos, locales y cloud",
+      "Habilitación tecnológica para procesos de Industria X"
     ],
     specs: [
-      { label: "Modelos", value: "Cloud / On-Premise / Híbrido" },
-      { label: "Escalabilidad", value: "Empresarial" }
+      { label: "Automatización", value: "Hi-Automation" },
+      { label: "Nube", value: "Hi-Cloud Híbrida/Local" }
     ]
   },
   {
     id: "cybersecurity-ot-it",
-    title: "Ciberseguridad Industrial & OT Risk",
+    title: "Ciberseguridad: Security Strategy Risk IT / OT",
     category: "cybersecurity",
-    subtitle: "Protección perimetral y estrategia de riesgo para redes industriales",
-    description: "Evaluación de vulnerabilidades, auditorías de riesgo OT, detección proactiva de amenazas e implementación de políticas Zero Trust.",
+    subtitle: "Security Strategy Risk IT, Security Strategy Risk OT & Cloud Security",
+    description: "Implementamos procesos de seguridad de la información identificando brechas, amenazas y riesgos en recursos tecnológicos corporativos (IT), entornos industriales (OT) e infraestructuras en la nube.",
     iconName: "ShieldCheck",
-    badge: "CISO & Ciberdefensa",
+    badge: "Security Risk IT/OT",
     features: [
-      "CISO as a Service y consultoría de riesgo tecnológico",
-      "Protección de redes SCADA, PLC e infraestructuras críticas",
-      "Detección y respuesta ante Ransomware y filtraciones",
-      "Estrategia de Seguridad Risk OT alineada a estándares internacionales"
+      "Security Strategy Risk IT: identificación de brechas, amenazas y riesgos tecnológicos",
+      "Security Strategy Risk OT: protección especializada para entornos y procesos industriales",
+      "Cloud Security: protección contra amenazas cibernéticas en entornos híbridos y cloud",
+      "Security Technology Consulting y operación integrada con Hi-SOC"
     ],
     specs: [
-      { label: "Seguridad", value: "Zero Trust Architecture" },
-      { label: "Monitoreo", value: "SOC Dedicado 24/7" },
-      { label: "Auditoría", value: "Ethical Hacking" }
+      { label: "Entornos", value: "Convergencia IT / OT" },
+      { label: "Centro Seguridad", value: "Hi-SOC Dedicado" },
+      { label: "Nube", value: "Cloud Security" }
     ],
     brochureSlug: "cybersecurity-for-industrial"
   },
@@ -271,183 +271,202 @@ export const SERVICES: ServiceItem[] = [
     id: "teletrabajo-hi-office",
     title: "Teletrabajo & Hi-Office",
     category: "workplace",
-    subtitle: "Ambiente de trabajo colaborativo, remoto y protegido",
-    description: "Infraestructura integrada de telefonía IP, escritorios virtuales y túneles seguros para permitir la continuidad operativa de colaboradores remotos.",
+    subtitle: "Soluciones digitales colaborativas y continuidad operativa remota",
+    description: "Conjunto de herramientas digitales y colaborativas orientadas a optimizar la operatividad de las oficinas y entornos de teletrabajo de forma segura, eficiente y sin interrupciones.",
     iconName: "Laptop",
-    badge: "Destacado Hi-Office",
+    badge: "Hi-Office",
     features: [
-      "Túneles VPN cifrados y acceso ZTNA sin exposición de red",
-      "Telefonía corporativa integrada con grabación y anexos en la nube",
-      "Protección de datos y control de accesos por roles",
-      "Reducción de costos operativos y traslados"
+      "Conectividad remota protegida y acceso seguro a recursos corporativos",
+      "Plataformas de colaboración, telepresencia y comunicaciones unificadas",
+      "Continuidad operativa para equipos distribuidos y trabajo híbrido",
+      "Optimización de costos de traslado y agilidad en la toma de decisiones"
     ],
     specs: [
-      { label: "Despliegue", value: "Multi-plataforma" },
-      { label: "Cifrado", value: "Grado Militar AES-256" }
+      { label: "Solución", value: "Hi-Office" },
+      { label: "Modalidad", value: "Presencial / Remoto / Híbrido" }
     ],
     brochureSlug: "hi-office"
   },
   {
     id: "site-connectivity-iot",
-    title: "Industrial Site Connectivity & IoT",
+    title: "Industrial Site Connectivity & IoT (Hi-Connect)",
     category: "infrastructure",
-    subtitle: "Conectividad robusta para faenas y sitios remotos",
-    description: "Enlaces de alta disponibilidad, sensorización IoT y monitoreo de activos geográficamente dispersos en condiciones extremas.",
+    subtitle: "Arquitectura de redes bajo estándares industriales, movilidad y colaboración",
+    description: "Servicio perteneciente a la familia Hi-Connect enfocado en asesorías tecnológicas para el diseño de arquitectura de redes bajo estrictos estándares industriales, integrando tecnologías para la movilidad, la colaboración y la convergencia IT/OT.",
     iconName: "Radio",
-    badge: "Alta Disponibilidad",
+    badge: "Hi-Connect & IoT",
     features: [
-      "Redes privadas inalámbricas y enlaces satelitales redundantes",
-      "Telemetría en tiempo real de sensores y maquinarias industriales",
-      "SD-WAN industrial para optimización de ancho de banda",
-      "Equipamiento rugerizado de alta tolerancia ambiental"
+      "Diseño de arquitectura de redes bajo estándares industriales exigentes",
+      "Integración de tecnologías para la movilidad y colaboración en terreno",
+      "Convergencia segura entre entornos IT y redes operativas OT",
+      "Conectividad IoT para monitoreo y continuidad en sitios industriales"
     ],
     specs: [
-      { label: "Uptime", value: "99.99% Garantizado" },
-      { label: "Ambientes", value: "Faenas Remotas / Alta Cordillera" }
+      { label: "Familia", value: "Hi-Connect" },
+      { label: "Estándar", value: "Redes Industriales IT/OT" }
     ],
     brochureSlug: "industrial-site-connectivity-iot"
   },
   {
     id: "analytics-geoanalytics",
-    title: "Analytics & Geoanalytics",
+    title: "Hi-Data & Analytics (Hi-Analytics & Geoanalytics)",
     category: "analytics",
-    subtitle: "Inteligencia de datos y analítica espacial de activos",
-    description: "Modelos analíticos y dashboards geoespaciales para la visualización de datos de flotas, sensores y puntos de atención en tiempo real.",
+    subtitle: "Data Science, Business Intelligence y capas de geolocalización espacial",
+    description: "Soluciones respaldadas por especialistas en Data Science y procesamiento de grandes volúmenes de información para ayudar a las empresas a potenciar sus negocios de forma estratégica.",
     iconName: "BarChart3",
-    badge: "Inteligencia de Datos",
+    badge: "Hi-Data & Analytics",
     features: [
-      "Dashboards ejecutivos georreferenciados en tiempo real",
-      "Optimización de rutas logísticas y monitoreo de activos",
-      "Modelos predictivos de mantenimiento preventivo",
-      "Integración nativa con sistemas ERP y bases de datos"
+      "Hi-Analytics: herramientas de marketing y Business Intelligence (BI) para interacciones personalizadas",
+      "Geoanalytics: incorporación de detalles de geolocalización y capas espaciales para descubrir nuevos insights",
+      "Hi-Revenue Growth: correlación y análisis avanzado de datos de negocio",
+      "Modelos de Data Science orientados a la toma de decisiones estratégicas"
     ],
     specs: [
-      { label: "Procesamiento", value: "En Tiempo Real" },
-      { label: "Motor", value: "Geoanalytics Vectorial" }
+      { label: "Familia", value: "Hi-Data & Analytics" },
+      { label: "Especialidad", value: "Hi-Analytics & Geoanalytics" }
     ],
     brochureSlug: "analytics"
+  },
+  {
+    id: "financiamiento-tecnologico",
+    title: "Financiamiento Tecnológico",
+    category: "consulting",
+    subtitle: "Financiamiento total de la solución y flexibilidad de pagos",
+    description: "Opciones de financiamiento diseñadas para facilitar la adopción de proyectos tecnológicos manteniendo el control del presupuesto empresarial bajo esquemas flexibles.",
+    iconName: "Briefcase",
+    badge: "Financiamiento 100%",
+    features: [
+      "Financiamiento total de la solución: hasta el 100% de los costos de equipamiento",
+      "Cobertura de costos indirectos como mantenimiento de software y servicios",
+      "Flexibilidad de los pagos: estructuración en modalidad mensual, trimestral o diferida",
+      "Adaptación al flujo de ingresos de la empresa manteniendo el control presupuestario"
+    ],
+    specs: [
+      { label: "Cobertura", value: "Hasta 100% Equipamiento y Servicios" },
+      { label: "Modalidades", value: "Mensual, Trimestral o Diferida" }
+    ]
   }
 ];
 
 export const ECONOMIC_SECTORS: EconomicSector[] = [
   {
-    id: "mining",
-    name: "Minería & Extractivas",
-    iconName: "Pickaxe",
-    description: "Infraestructura de comunicaciones y ciberseguridad adaptada a entornos extremos y faenas mineras remotas a gran altitud.",
-    challenges: [
-      "Cobertura inalámbrica en rajos y subterránea de alta interferencia",
-      "Protección de redes SCADA y sistemas de camiones autónomos",
-      "Polvo, vibraciones extremos y oscilaciones térmicas"
-    ],
-    solutionsProvided: [
-      "Redes mesh LTE/5G industriales ultra-resistentes",
-      "Ciberseguridad OT con aislamiento de componentes críticos",
-      "Telemetría geotécnica en tiempo real"
-    ],
-    metrics: [
-      { label: "Disponibilidad Faena", value: "99.99%" },
-      { label: "Reducción Incidentes", value: "-45%" }
-    ]
-  },
-  {
-    id: "telecom",
-    name: "Telecomunicaciones & Proveedores TI",
-    iconName: "Signal",
-    description: "Soporte de infraestructura de transporte, interconexiones de datos y servicios profesionales gestionados de alto volumen.",
-    challenges: [
-      "Garantizar disponibilidad ante cortes de energía o enlaces",
-      "Escalabilidad inmediata de capacidad de datos",
-      "Cumplimiento riguroso de normativas de regulación telco"
-    ],
-    solutionsProvided: [
-      "Monitoreo NOC proactivo 24/7",
-      "Consultoría de optimización de redes IP/MPLS",
-      "Auditorías de ciberseguridad perimetral BGP"
-    ],
-    metrics: [
-      { label: "MTTR Promedio", value: "18 min" },
-      { label: "Nodos Monitoreados", value: "+1,200" }
-    ]
-  },
-  {
-    id: "government",
-    name: "Gobierno & Sector Público",
-    iconName: "Landmark",
-    description: "Plataformas seguras de comunicación e interconexión interinstitucional alineadas a la Ley de Transformación Digital y Ciberseguridad.",
-    challenges: [
-      "Cumplimiento estricto de estándares de privacidad de datos de ciudadanos",
-      "Resistencia frente a ataques DDoS y phishing masivo",
-      "Continuidad operativa ante contingencias nacionales"
-    ],
-    solutionsProvided: [
-      "Arquitecturas ZTNA para personal público en teletrabajo",
-      "Protección contra exfiltración de información confidencial",
-      "Sistemas de contingencia y respaldos cifrados immutable cloud"
-    ],
-    metrics: [
-      { label: "Cumplimiento ISO 27001", value: "100%" },
-      { label: "Exposición a Amenazas", value: "0 Fugas" }
-    ]
-  },
-  {
     id: "finance",
-    name: "Banca, Finanzas & Seguros",
-    iconName: "Building2",
-    description: "Ambientes hiperseguros para transacciones financieras de baja latencia con respaldo multi-datacenter.",
+    name: "Financiero",
+    iconName: "Landmark",
+    description: "Las instituciones financieras han evolucionado con gran velocidad mediante procesos de transformación digital, incorporando tecnologías Fintech, actualizando sus modelos de servicio omnicanal (presencial-digital) y enfocándose en la analítica, la personalización y la adopción tecnológica por parte de sus colaboradores.",
     challenges: [
-      "Riesgos de fraude y filtración de datos crediticios o de tarjetas",
-      "Requerimiento de baja latencia e interconexión PCI-DSS",
-      "Seguimiento minucioso de accesos privileged"
+      "Evolución acelerada hacia modelos de servicio omnicanal (presencial-digital)",
+      "Integración ágil y segura de nuevas tecnologías Fintech",
+      "Necesidad de analítica avanzada, personalización y adopción por los colaboradores"
     ],
     solutionsProvided: [
-      "Cifrado de datos en reposo y en tránsito con HSM/KMS",
-      "Monitoreo de actividad de usuarios privilegiados (PAM)",
-      "Conexiones dedicadas punto a punto redundantes"
+      "Hi-Automation, Hi-Cloud y Servicios Gestionados 24/7",
+      "Security Strategy Risk IT y Security Technology Consulting",
+      "Hi-Data & Analytics, Infraestructura y Financiamiento"
     ],
     metrics: [
-      { label: "Certificación PCI-DSS", value: "Compatible" },
-      { label: "Latencia Internodo", value: "< 2 ms" }
-    ]
-  },
-  {
-    id: "energy",
-    name: "Energía & Utilities",
-    iconName: "Zap",
-    description: "Protección y monitoreo de parques fotovoltaicos, eólicos, subestaciones eléctricas y redes de distribución de agua/gas.",
-    challenges: [
-      "Aislamiento de instalaciones geográficamente dispersas",
-      "Protección de PLC/RTU frente a intrusiones externas",
-      "Continuidad de suministro ininterrumpido"
-    ],
-    solutionsProvided: [
-      "Conectividad satelital y celular híbrida para plantas remotas",
-      "Sistema de alerta temprana de ciberataques industriales",
-      "Tele-control remoto cifrado de subestaciones"
-    ],
-    metrics: [
-      { label: "Plantas Conectadas", value: "+90" },
-      { label: "Uptime de Red", value: "99.98%" }
+      { label: "Enfoque", value: "Omnicanal" },
+      { label: "Seguridad", value: "Hi-SOC 24/7" }
     ]
   },
   {
     id: "retail",
-    name: "Retail, Logística & Comercio",
+    name: "Retail",
     iconName: "ShoppingBag",
-    description: "Integración de sucursales, centros de distribución y trazabilidad de la cadena de suministro en tiempo real.",
+    description: "En el nuevo retail, la satisfacción del cliente es un pilar fundamental para asegurar la recurrencia de compra, por lo que el sector debe dar un salto adelante para adaptarse permanentemente a las nuevas necesidades del mercado.",
     challenges: [
-      "Caídas de puntos de venta en horas pico de alta demanda",
-      "Gestión de inventarios y flotas distribuidas nacionalmente",
-      "Ciberdefensa de tiendas online y pasarelas de pago"
+      "Asegurar la satisfacción del cliente y la recurrencia de compra",
+      "Adaptación continua a las nuevas necesidades y hábitos del mercado",
+      "Disponibilidad e integración de canales físicos y digitales"
     ],
     solutionsProvided: [
-      "SD-WAN con failover 4G/5G instantáneo para tiendas",
-      "Plataforma de Geoanalytics para optimización de logística",
-      "Mesa de ayuda express para cajas y terminales POS"
+      "Hi-Data & Analytics (Hi-Analytics y Geoanalytics) para conocer al cliente",
+      "Hi-Automation y Hi-Cloud para optimizar procesos operativos",
+      "Servicios Gestionados, Ciberseguridad, Infraestructura y Financiamiento"
     ],
     metrics: [
-      { label: "Sucursales Conectadas", value: "+350" },
-      { label: "Falla de Transacción", value: "0.01%" }
+      { label: "Foco", value: "Experiencia Cliente" },
+      { label: "Analítica", value: "Geoanalytics" }
+    ]
+  },
+  {
+    id: "mining",
+    name: "Minería",
+    iconName: "Pickaxe",
+    description: "La incorporación de tecnologías digitales es una prioridad para potenciar la productividad y la sustentabilidad en la industria minera, ayudando a minimizar diversos desafíos operacionales y ambientales.",
+    challenges: [
+      "Mejorar continuamente la productividad y la sustentabilidad operacional",
+      "Minimizar desafíos operativos en entornos industriales exigentes",
+      "Convergencia y protección de redes operativas (OT) y corporativas (IT)"
+    ],
+    solutionsProvided: [
+      "Industrial Site Connectivity & IoT (Hi-Connect) bajo estándares industriales",
+      "Security Strategy Risk OT / IT y monitoreo continuo Hi-SOC",
+      "Hi-Automation, Hi-Data & Analytics y Servicios Gestionados"
+    ],
+    metrics: [
+      { label: "Prioridad", value: "Productividad" },
+      { label: "Conectividad", value: "IT / OT & IoT" }
+    ]
+  },
+  {
+    id: "health",
+    name: "Digitalización en Salud",
+    iconName: "Building2",
+    description: "La tecnología digital aporta un gran abanico de posibilidades para mejorar la atención médica, optimizar operaciones y ofrecer experiencias superiores a los pacientes, considerando siempre la seguridad y los requisitos reglamentarios para mitigar riesgos.",
+    challenges: [
+      "Mejorar la atención médica y ofrecer experiencias superiores a los pacientes",
+      "Optimizar las operaciones clínicas y administrativas",
+      "Cumplir estrictos requisitos reglamentarios y de seguridad para mitigar riesgos"
+    ],
+    solutionsProvided: [
+      "Hi-Automation, Hi-Cloud y Hi-Data & Analytics",
+      "Security Strategy Risk IT y Security Technology Consulting",
+      "Servicios Gestionados, Infraestructura y Financiamiento"
+    ],
+    metrics: [
+      { label: "Atención", value: "Digitalizada" },
+      { label: "Protección", value: "Cumplimiento" }
+    ]
+  },
+  {
+    id: "education",
+    name: "Educación",
+    iconName: "Signal",
+    description: "Acompañamos a las instituciones educativas en su transformación digital mediante infraestructura robusta, colaboración remota, ciberseguridad y analítica de datos para potenciar el aprendizaje y la gestión institucional.",
+    challenges: [
+      "Continuidad de plataformas digitales y colaboración a distancia",
+      "Protección de datos e infraestructura académica ante amenazas cibernéticas",
+      "Modernización tecnológica con control presupuestario"
+    ],
+    solutionsProvided: [
+      "Hi-Office, Colaboración y Conectividad de alta disponibilidad",
+      "Hi-Cloud, Cloud Security y Servicios Gestionados",
+      "Financiamiento flexible hasta el 100% de la solución"
+    ],
+    metrics: [
+      { label: "Entorno", value: "Colaborativo" },
+      { label: "Soporte", value: "Gestionado" }
+    ]
+  },
+  {
+    id: "industry",
+    name: "Energía & Industria X",
+    iconName: "Zap",
+    description: "Impulsamos la transformación hacia la Industria X integrando automatización avanzada, conectividad industrial IoT, analítica espacial y ciberseguridad OT/IT para operaciones de alto rendimiento.",
+    challenges: [
+      "Integración segura entre tecnologías de operación (OT) y de información (IT)",
+      "Automatización de flujos de trabajo para reducir tiempos y errores",
+      "Visibilidad y control de activos distribuidos geográficamente"
+    ],
+    solutionsProvided: [
+      "Industrial Site Connectivity & IoT y Geoanalytics",
+      "Security Strategy Risk OT y Centro de Operaciones Hi-SOC",
+      "Hi-Automation y Consultoría Tecnológica Especializada"
+    ],
+    metrics: [
+      { label: "Evolución", value: "Industria X" },
+      { label: "Seguridad", value: "Risk IT / OT" }
     ]
   }
 ];
@@ -505,28 +524,28 @@ export const BROCHURES: BrochureItem[] = [
 
 export const SECURITY_COMPARISON = [
   {
-    feature: "Exposición de Claves & Código",
-    legacyWP: "⚠️ Alta. Scripts y credenciales visibles en código HTML/JS cliente.",
-    hiwayNextJS: "🛡️ Cero. Procesamiento Server-Side (SSR/API Routes) sin fugas de datos."
+    feature: "Financiamiento Total de la Solución",
+    legacyWP: "Inversión inicial elevada solo para hardware sin cubrir servicios asociados.",
+    hiwayNextJS: "Financiamiento de hasta el 100% de los costos de equipamiento, mantenimiento de software y servicios."
   },
   {
-    feature: "Tiempo de Respuesta (TTFB)",
-    legacyWP: "🐢 1.8s - 3.5s debido a múltiples plugins y Visual Composer.",
-    hiwayNextJS: "⚡ < 150ms con Next.js App Router y assets ultraligeros."
+    feature: "Flexibilidad de los Pagos",
+    legacyWP: "Esquemas rígidos que presionan el flujo de caja de la organización.",
+    hiwayNextJS: "Pagos en modalidad mensual, trimestral o diferida según el flujo de ingresos de la empresa."
   },
   {
-    feature: "Riesgo de Inyección (SQLi / XSS)",
-    legacyWP: "⚠️ Constantes fallos por plugins de formularios (Contact Form 7 anticuados).",
-    hiwayNextJS: "🛡️ Sanitización estricta de inputs con esquemas TypeScript en el servidor."
+    feature: "Hi-SOC (Hi-Security Operations Center)",
+    legacyWP: "Reacción tardía ante incidentes y falta de visibilidad centralizada.",
+    hiwayNextJS: "Detección, análisis y respuesta rápida ante incidentes para garantizar la continuidad del negocio."
   },
   {
-    feature: "Seguridad de Formularios",
-    legacyWP: "⚠️ Vulnerable a bots y spam sin Rate Limiting efectivo.",
-    hiwayNextJS: "🛡️ Tokens sanitizados, headers de rate-limit y validación API REST."
+    feature: "Security Strategy Risk IT / OT",
+    legacyWP: "Brechas de seguridad entre redes corporativas (IT) y entornos industriales (OT).",
+    hiwayNextJS: "Procesos integrales que identifican brechas, amenazas y riesgos tecnológicos e industriales."
   },
   {
-    feature: "Cumplimiento Normativo",
-    legacyWP: "❌ Estándares web básicos anticuados.",
-    hiwayNextJS: "✅ Alineado con directrices ISO 27001, SOC2 y Ley de Ciberseguridad."
+    feature: "Cloud Security & Servicios Gestionados",
+    legacyWP: "Administración aislada sin monitoreo continuo 24/7.",
+    hiwayNextJS: "Protección en entornos híbridos/cloud y operación remota continua (NOC/SOC) bajo estándares ITIL."
   }
 ];

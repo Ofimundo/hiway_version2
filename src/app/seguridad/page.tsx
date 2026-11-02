@@ -8,17 +8,17 @@ import { Footer } from '@/components/Footer';
 
 export default function SeguridadPage() {
   return (
-    <main className="min-h-screen bg-white text-slate-900 flex flex-col selection:bg-sky-500 selection:text-white">
+    <main className="min-h-screen bg-[#05335C] text-white flex flex-col selection:bg-[#FFD303] selection:text-[#021C33]">
       
       {/* Top Header Navigation */}
       <Navbar />
 
       {/* Subpage Banner */}
       <SubpageHero 
-        category="Seguridad"
-        badge="Auditoría & Protección Server-Side"
-        title="Arquitectura de Alta Seguridad Next.js"
-        subtitle="Eliminamos completamente las vulnerabilidades del código expuesto en WordPress, garantizando cero fugas de datos y tiempo de respuesta inmediato."
+        category="Financiamiento & Ciberseguridad Hi-SOC"
+        badge="Financiamiento Total & Centro Hi-SOC"
+        title="Financiamiento Tecnológico & Operaciones de Seguridad Hi-SOC"
+        subtitle="Financiamiento de hasta el 100% de los costos de equipamiento, software y servicios con flexibilidad de pagos, respaldado por nuestro Hi-Security Operations Center (Hi-SOC)."
       />
 
       {/* Detailed Section */}

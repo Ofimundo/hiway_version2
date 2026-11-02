@@ -1,33 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  --bg-space: #ffffff;
-  --bg-subtle: #f8fafc;
-  --bg-card: #ffffff;
-  --border-cyan: rgba(0, 176, 229, 0.3);
-  --border-slate: #e2e8f0;
-  --hiway-navy: #05335c;
-  --hiway-blue: #05477d;
-  --hiway-cyan: #00b0e5;
-  --hiway-light-cyan: #21ceff;
-  --hiway-red: #e31c23;
-  --accent-cyan: #00b0e5;
-  --accent-blue: #05477d;
-  --accent-green: #21ceff;
+  --bg-space: #05335C;
+  --bg-deep: #021C33;
+  --bg-card: #05477D;
+  --border-accent: rgba(255, 211, 3, 0.35);
+  --border-purple: rgba(89, 28, 201, 0.45);
+  --hiway-navy: #05335C;
+  --hiway-deep-navy: #021C33;
+  --hiway-blue: #05477D;
+  --hiway-yellow: #FFD303;
+  --hiway-purple: #591CC9;
+  --hiway-white: #FFFFFF;
 }
 
 html, body {
-  background-color: #ffffff !important;
-  color: #0f172a !important;
+  background-color: #05335C !important;
+  color: #FFFFFF !important;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
 }
 
+/* Thin Horizontal Gradient Line (Yellow -> Purple) */
+.line-gradient-accent {
+  background: linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
+}
+
 /* Glassmorphism & Card Utility Classes */
 .glass-panel {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px -2px rgba(5, 51, 92, 0.06);
+  background: #05477D;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 28px -4px rgba(2, 28, 51, 0.5);
 }
 
 .glass-panel-hover {
@@ -36,72 +39,75 @@ html, body {
 
 .glass-panel-hover:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 36px -4px rgba(0, 176, 229, 0.2);
+  border-color: rgba(255, 211, 3, 0.5);
+  box-shadow: 0 16px 36px -4px rgba(2, 28, 51, 0.65);
 }
 
-/* White Cards with Hiway Brand Gradient Border Lines */
+/* Azul Medio Cards with Yellow -> Purple Thin Gradient Border Lines */
 .gradient-border-box {
-  background: #ffffff;
+  background: #05477D;
+  color: #FFFFFF;
   border-radius: 1.75rem;
   padding: 2.25rem 2rem;
-  border: 2px solid transparent;
-  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #05335c 0%, #05477d 35%, #00b0e5 70%, #21ceff 100%);
+  border: 1.5px solid transparent;
+  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  box-shadow: 0 12px 36px -6px rgba(5, 71, 125, 0.12);
+  box-shadow: 0 14px 36px -6px rgba(2, 28, 51, 0.55);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gradient-border-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 22px 46px -8px rgba(0, 176, 229, 0.25);
+  box-shadow: 0 22px 46px -8px rgba(2, 28, 51, 0.75), 0 0 20px -4px rgba(255, 211, 3, 0.2);
 }
 
 .gradient-border-box-emerald {
-  background: #ffffff;
+  background: #05477D;
+  color: #FFFFFF;
   border-radius: 1.75rem;
   padding: 2.25rem 2rem;
-  border: 2px solid transparent;
-  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #05477d 0%, #00b0e5 50%, #21ceff 80%, #e31c23 100%);
+  border: 1.5px solid transparent;
+  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #591CC9 0%, #FFD303 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  box-shadow: 0 12px 36px -6px rgba(0, 176, 229, 0.12);
+  box-shadow: 0 14px 36px -6px rgba(2, 28, 51, 0.55);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gradient-border-box-emerald:hover {
   transform: translateY(-5px);
-  box-shadow: 0 22px 46px -8px rgba(227, 28, 35, 0.2);
+  box-shadow: 0 22px 46px -8px rgba(89, 28, 201, 0.35);
 }
 
-/* Vibrant Gradient Card Class with White Text */
+/* Blue Card Variants with White Text */
 .card-gradient-blue-emerald {
-  background: linear-gradient(135deg, #05335c 0%, #05477d 40%, #00b0e5 100%);
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 32px -4px rgba(5, 51, 92, 0.3);
+  background: linear-gradient(135deg, #021C33 0%, #05335C 50%, #05477D 100%);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 211, 3, 0.3);
+  box-shadow: 0 12px 32px -4px rgba(2, 28, 51, 0.5);
 }
 
 .card-gradient-slate-blue {
-  background: linear-gradient(135deg, #031e38 0%, #05335c 50%, #05477d 100%);
-  color: #ffffff !important;
-  border: 1px solid rgba(0, 176, 229, 0.3);
-  box-shadow: 0 12px 32px -4px rgba(3, 30, 56, 0.35);
+  background: linear-gradient(135deg, #021C33 0%, #05335C 60%, #05477D 100%);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(89, 28, 201, 0.4);
+  box-shadow: 0 12px 32px -4px rgba(2, 28, 51, 0.55);
 }
 
 .card-gradient-sky-green {
-  background: linear-gradient(135deg, #05477d 0%, #00b0e5 60%, #21ceff 100%);
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 12px 32px -4px rgba(0, 176, 229, 0.25);
+  background: #05477D;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 32px -4px rgba(2, 28, 51, 0.45);
 }
 
-/* Background Glows */
+/* Background Glows (Azul medio #05477D & Detalles Morado #591CC9) */
 .cyber-glow-cyan {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0, 176, 229, 0.16) 0%, rgba(0, 176, 229, 0) 70%);
+  background: radial-gradient(circle, rgba(5, 71, 125, 0.65) 0%, rgba(5, 71, 125, 0) 70%);
   filter: blur(60px);
   pointer-events: none;
 }
@@ -110,49 +116,50 @@ html, body {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(33, 206, 255, 0.14) 0%, rgba(33, 206, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(89, 28, 201, 0.22) 0%, rgba(89, 28, 201, 0) 70%);
   filter: blur(60px);
   pointer-events: none;
 }
 
-/* Hiway Brand Gradient Button Utility */
+/* Hiway Brand CTA Button Utility (Amarillo #FFD303 para botones/CTA) */
 .btn-gradient {
-  background: linear-gradient(135deg, #05335c 0%, #05477d 35%, #00b0e5 70%, #21ceff 100%);
-  color: #ffffff !important;
-  font-weight: 700;
+  background: #FFD303;
+  color: #021C33 !important;
+  font-weight: 800;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 16px 0 rgba(5, 71, 125, 0.35);
+  box-shadow: 0 4px 18px 0 rgba(255, 211, 3, 0.28);
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #032240 0%, #05335c 35%, #0096c7 70%, #00b0e5 100%);
-  box-shadow: 0 6px 22px 0 rgba(0, 176, 229, 0.45);
+  background: #ffe033;
+  color: #021C33 !important;
+  box-shadow: 0 6px 24px 0 rgba(255, 211, 3, 0.45);
   transform: translateY(-1px);
 }
 
 .btn-gradient-secondary {
-  background: linear-gradient(135deg, #05477d 0%, #00b0e5 60%, #21ceff 100%);
-  color: #ffffff !important;
+  background: #05477D;
+  color: #FFFFFF !important;
+  border: 1px solid #591CC9;
   font-weight: 700;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 16px 0 rgba(0, 176, 229, 0.35);
+  box-shadow: 0 4px 16px 0 rgba(89, 28, 201, 0.25);
 }
 
 .btn-gradient-secondary:hover {
-  background: linear-gradient(135deg, #05335c 0%, #05477d 60%, #00b0e5 100%);
-  box-shadow: 0 6px 22px 0 rgba(5, 71, 125, 0.45);
+  background: #591CC9;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 22px 0 rgba(89, 28, 201, 0.45);
   transform: translateY(-1px);
 }
 
-/* Gradient Text Utilities */
+/* Highlighted Headline Text Utilities (Amarillo #FFD303) */
 .text-gradient-cyan {
-  background: linear-gradient(135deg, #05335c 0%, #05477d 30%, #00b0e5 70%, #21ceff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FFD303;
 }
 
 .text-gradient-green {
-  background: linear-gradient(135deg, #00b0e5 0%, #21ceff 50%, #e31c23 100%);
+  background: linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -163,15 +170,15 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #021C33;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #05477D;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00b0e5;
+  background: #FFD303;
 }
 
