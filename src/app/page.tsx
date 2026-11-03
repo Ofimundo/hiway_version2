@@ -77,7 +77,7 @@ export default function Home() {
     {
       title: 'Contacto & Mesa de Servicios',
       badge: 'Chile & México',
-      description: 'Completa el formulario y aclararemos todas tus dudas desde nuestra Casa Matriz en Las Condes (Santiago de Chile), nuestra Filial en Ciudad de México o nuestra Mesa de Servicios.',
+      description: 'Completa el formulario y aclararemos todas tus dudas desde nuestra Casa Matriz en Providencia (Santiago de Chile), nuestra Filial en Ciudad de México o nuestra Mesa de Servicios.',
       href: '/contacto',
       icon: Headphones,
       actionText: 'Conversemos con un Consultor'

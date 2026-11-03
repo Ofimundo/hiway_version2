@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   X, 
   Download, 
@@ -33,11 +33,11 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (initialBrochureSlug) {
-      setSelectedSlug(initialBrochureSlug);
-    }
-  }, [initialBrochureSlug]);
+  const [prevInitial, setPrevInitial] = useState(initialBrochureSlug);
+  if (initialBrochureSlug && initialBrochureSlug !== prevInitial) {
+    setPrevInitial(initialBrochureSlug);
+    setSelectedSlug(initialBrochureSlug);
+  }
 
   if (!isOpen) return null;
 

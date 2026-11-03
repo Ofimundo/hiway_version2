@@ -147,10 +147,10 @@ export const OFFICES: OfficeLocation[] = [
   {
     city: "Santiago",
     country: "Chile",
-    address: "Isidora Goyenechea 3621, Oficina 201, Las Condes, Santiago, Chile",
+    address: "Lota 2305, Providencia, Santiago",
     phone: "+56 2 2940 7500",
     email: "consultas@cxhiway.com",
-    mapCoordinates: "-33.414, -70.596",
+    mapCoordinates: "-33.421, -70.606",
     isHQ: true
   },
   {
