@@ -28,17 +28,17 @@ export const SubpageHero: React.FC<SubpageHeroProps> = ({
         
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-xs font-semibold text-white/70">
-          <Link href="/" className="hover:text-[#FFD303] transition-colors">
+          <Link href="/" className="hover:text-[#591CC9] transition-colors">
             Inicio
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-white/50" />
-          <span className="text-[#FFD303] font-bold">{category}</span>
+          <span className="text-[#591CC9] font-bold">{category}</span>
         </div>
 
         {/* Header Content */}
         <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#FFD303]/40 text-[#FFD303] text-xs font-bold shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-[#FFD303]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#591CC9]/80 text-white text-xs font-bold shadow-sm">
+            <Sparkles className="w-3.5 h-3.5 text-white" />
             {badge}
           </div>
 

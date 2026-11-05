@@ -8,7 +8,7 @@ import { Footer } from '@/components/Footer';
 
 export default function ContactoPage() {
   return (
-    <main className="min-h-screen bg-[#05335C] text-white flex flex-col selection:bg-[#FFD303] selection:text-[#021C33]">
+    <main className="min-h-screen bg-[#05335C] text-white flex flex-col selection:bg-[#591CC9] selection:text-white">
       
       {/* Top Header Navigation */}
       <Navbar />

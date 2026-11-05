@@ -95,12 +95,12 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
         className="bg-[#05477D] text-white w-full max-w-2xl rounded-3xl p-6 sm:p-8 border border-[#591CC9] shadow-2xl relative overflow-hidden animate-in fade-in zoom-in duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#FFD303] to-[#591CC9]" />
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#591CC9]" />
         
         {/* Close Button */}
         <button
           onClick={resetForm}
-          className="absolute top-5 right-5 p-2 rounded-xl bg-[#021C33] text-white/70 hover:text-[#FFD303] border border-[#591CC9]/60 transition-colors"
+          className="absolute top-5 right-5 p-2 rounded-xl bg-[#021C33] text-white/70 hover:text-[#591CC9] border border-[#591CC9]/60 transition-colors"
           aria-label="Cerrar modal"
         >
           <X className="w-5 h-5" />
@@ -111,8 +111,8 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
             
             {/* Modal Header */}
             <div className="space-y-2 mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#021C33] border border-[#FFD303]/40 text-[10px] font-bold text-[#FFD303] uppercase tracking-wider">
-                <Sparkles className="w-3 h-3 text-[#FFD303]" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#021C33] border border-[#591CC9]/80 text-[10px] font-bold text-white uppercase tracking-wider">
+                <Sparkles className="w-3 h-3 text-white" />
                 Descarga de Documentación Técnica
               </div>
               <h3 className="text-2xl font-bold text-white">
@@ -131,12 +131,12 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
                     onClick={() => setSelectedSlug(b.slug)}
                     className={`p-3 rounded-2xl text-left border transition-all flex items-start gap-2.5 ${
                       selectedSlug === b.slug
-                        ? 'bg-[#021C33] border-[#FFD303] text-white shadow-sm font-bold'
+                        ? 'bg-[#021C33] border-[#591CC9] text-white shadow-sm font-bold'
                         : 'bg-[#05335C] border-[#591CC9]/50 text-white/80 hover:text-white hover:bg-[#021C33]/60'
                     }`}
                   >
                     <FileText className={`w-4 h-4 shrink-0 mt-0.5 ${
-                      selectedSlug === b.slug ? 'text-[#FFD303]' : 'text-white/60'
+                      selectedSlug === b.slug ? 'text-[#591CC9]' : 'text-white/60'
                     }`} />
                     <div className="min-w-0 flex-1">
                       <div className="text-xs font-bold truncate">{b.title}</div>
@@ -148,9 +148,9 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
             </div>
 
             {/* Form (Temporarily Disabled) */}
-            <div className="mb-4 p-3 rounded-xl bg-[#021C33] border border-[#FFD303]/50 text-xs text-white/90">
-              <strong className="text-[#FFD303] block mb-0.5">Formulario temporalmente inhabilitado</strong>
-              Solicita este brochure escribiendo a <a href="mailto:consultas@cxhiway.com" className="text-[#FFD303] underline font-bold">consultas@cxhiway.com</a>.
+            <div className="mb-4 p-3 rounded-xl bg-[#021C33] border border-[#591CC9]/80 text-xs text-white/90">
+              <strong className="text-[#591CC9] block mb-0.5">Formulario temporalmente inhabilitado</strong>
+              Solicita este brochure escribiendo a <a href="mailto:consultas@cxhiway.com" className="text-[#591CC9] underline font-bold">consultas@cxhiway.com</a>.
             </div>
 
             <form onSubmit={(e) => e.preventDefault()} className="space-y-4 opacity-60 pointer-events-none select-none" aria-disabled="true">
@@ -183,7 +183,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
 
                 <div className="pt-2 flex items-center justify-between">
                   <div className="flex items-center gap-1.5 text-[11px] text-white/75">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#FFD303]" />
+                    <ShieldCheck className="w-3.5 h-3.5 text-white" />
                     <span>Formulario temporalmente deshabilitado</span>
                   </div>
 
@@ -202,14 +202,14 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({
           </div>
         ) : (
           <div className="text-center py-8 space-y-6 animate-in fade-in duration-300">
-            <div className="w-16 h-16 rounded-full bg-[#021C33] border border-[#FFD303] text-[#FFD303] flex items-center justify-center mx-auto">
+            <div className="w-16 h-16 rounded-full bg-white border border-white text-[#591CC9] flex items-center justify-center mx-auto shadow-md">
               <CheckCircle2 className="w-8 h-8" />
             </div>
 
             <div className="space-y-2">
               <h3 className="text-2xl font-bold text-white">¡Contenido Enviado!</h3>
               <p className="text-xs text-white/85 max-w-md mx-auto">
-                Hemos procesado el envío del brochure <strong className="text-[#FFD303]">{currentBrochure.title}</strong> a la casilla <span className="text-[#FFD303] font-mono font-bold">{email}</span>.
+                Hemos procesado el envío del brochure <strong className="text-[#591CC9]">{currentBrochure.title}</strong> a la casilla <span className="text-[#591CC9] font-mono font-bold">{email}</span>.
               </p>
             </div>
 

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <g transform="translate(6, 6)">
+    <polygon points="18,0 36,10 36,28 18,38 0,28 0,10" fill="#FFFFFF"/>
+    <circle cx="18" cy="19" r="6" fill="#021C33"/>
+    <circle cx="18" cy="19" r="2.5" fill="#FFFFFF"/>
+  </g>
+  <text x="54" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="2px">ARCHER</text>
+</svg>

@@ -42,8 +42,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
           : 'bg-[#021C33]/90 backdrop-blur-md py-4'
       }`}
     >
-      {/* Top Gradient Accent Line (#FFD303 -> #591CC9) */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#FFD303] to-[#591CC9]" />
+      {/* Top Purple Accent Line (#591CC9) */}
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#591CC9]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
@@ -60,31 +60,31 @@ export const Navbar: React.FC<NavbarProps> = () => {
           <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
             <Link 
               href="/quienes-somos" 
-              className="hover:text-[#FFD303] transition-colors"
+              className="hover:text-[#591CC9] transition-colors"
             >
               Quiénes Somos
             </Link>
             <Link 
               href="/soluciones-y-servicios" 
-              className="hover:text-[#FFD303] transition-colors"
+              className="hover:text-[#591CC9] transition-colors"
             >
               Soluciones & Servicios
             </Link>
             <Link 
               href="/sectores-economicos" 
-              className="hover:text-[#FFD303] transition-colors"
+              className="hover:text-[#591CC9] transition-colors"
             >
               Sectores Económicos
             </Link>
             <Link 
               href="/metodologias" 
-              className="hover:text-[#FFD303] transition-colors"
+              className="hover:text-[#591CC9] transition-colors"
             >
               Metodologías
             </Link>
             <Link 
               href="/contacto" 
-              className="hover:text-[#FFD303] transition-colors"
+              className="hover:text-[#591CC9] transition-colors"
             >
               Contacto
             </Link>
@@ -99,14 +99,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 onClick={() => setOfficeDropdownOpen(!officeDropdownOpen)}
                 className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-white bg-[#05477D] hover:bg-[#05477D]/80 border border-[#591CC9]/50 rounded-xl transition-colors"
               >
-                <Globe2 className="w-3.5 h-3.5 text-[#FFD303]" />
+                <Globe2 className="w-3.5 h-3.5 text-white" />
                 <span>{selectedOffice.city} ({selectedOffice.country})</span>
                 <ChevronDown className="w-3 h-3 text-white/70" />
               </button>
 
               {officeDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-64 bg-[#021C33] rounded-2xl shadow-2xl p-2 border border-[#05477D] space-y-1 z-50">
-                  <div className="px-3 py-1.5 text-[11px] font-semibold text-[#FFD303] uppercase tracking-wider">
+                  <div className="px-3 py-1.5 text-[11px] font-semibold text-[#591CC9] uppercase tracking-wider">
                     Sedes Internacionales
                   </div>
                   {OFFICES.map((office) => (
@@ -118,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                       }}
                       className={`w-full text-left px-3 py-2 text-xs rounded-xl flex items-center justify-between transition-colors ${
                         selectedOffice.city === office.city 
-                          ? 'bg-[#05477D] text-white font-bold border border-[#FFD303]/40' 
+                          ? 'bg-[#05477D] text-white font-bold border border-[#591CC9]' 
                           : 'text-white/80 hover:bg-[#05335C]'
                       }`}
                     >
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                         <div className="text-[10px] text-white/70">{office.phone}</div>
                       </div>
                       {office.isHQ && (
-                        <span className="text-[9px] bg-[#591CC9]/30 text-[#FFD303] px-1.5 py-0.5 rounded font-semibold border border-[#591CC9]">
+                        <span className="text-[9px] bg-[#591CC9] text-white px-1.5 py-0.5 rounded font-semibold border border-[#591CC9]">
                           Matriz
                         </span>
                       )}
@@ -137,7 +137,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
               )}
             </div>
 
-            {/* Contact CTA in Yellow Accent */}
+            {/* Contact CTA in Purple Accent */}
             <Link 
               href="/contacto"
               className="px-5 py-2.5 text-xs font-bold btn-gradient rounded-xl flex items-center gap-1.5 transform hover:scale-[1.02] transition-transform"
@@ -150,7 +150,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           {/* Mobile Hamburger Button */}
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-white hover:text-[#FFD303] rounded-xl bg-[#05477D] border border-white/15"
+            className="lg:hidden p-2 text-white hover:text-[#591CC9] rounded-xl bg-[#05477D] border border-white/15"
             aria-label="Abrir menú"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -165,35 +165,35 @@ export const Navbar: React.FC<NavbarProps> = () => {
             <Link 
               href="/quienes-somos" 
               onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-xl hover:bg-[#05477D] hover:text-[#FFD303] transition-colors"
+              className="px-3 py-2 rounded-xl hover:bg-[#05477D] hover:text-[#591CC9] transition-colors"
             >
               Quiénes Somos
             </Link>
             <Link 
               href="/soluciones-y-servicios" 
               onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#FFD303] transition-colors"
+              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#591CC9] transition-colors"
             >
               Soluciones & Servicios
             </Link>
             <Link 
               href="/sectores-economicos" 
               onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#FFD303] transition-colors"
+              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#591CC9] transition-colors"
             >
               Sectores Económicos
             </Link>
             <Link 
               href="/metodologias" 
               onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#FFD303] transition-colors"
+              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#591CC9] transition-colors"
             >
               Metodologías
             </Link>
             <Link 
               href="/contacto" 
               onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#FFD303] transition-colors"
+              className="px-3 py-2 rounded-lg hover:bg-[#05477D] hover:text-[#591CC9] transition-colors"
             >
               Contacto
             </Link>

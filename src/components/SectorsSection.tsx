@@ -19,13 +19,13 @@ export const SectorsSection: React.FC = () => {
 
   const getSectorIcon = (iconName: string) => {
     switch (iconName) {
-      case 'Pickaxe': return <Pickaxe className="w-5 h-5 text-[#FFD303]" />;
-      case 'Signal': return <Signal className="w-5 h-5 text-[#FFD303]" />;
-      case 'Landmark': return <Landmark className="w-5 h-5 text-[#FFD303]" />;
-      case 'Building2': return <Building2 className="w-5 h-5 text-[#FFD303]" />;
-      case 'Zap': return <Zap className="w-5 h-5 text-[#FFD303]" />;
-      case 'ShoppingBag': return <ShoppingBag className="w-5 h-5 text-[#FFD303]" />;
-      default: return <Building2 className="w-5 h-5 text-[#FFD303]" />;
+      case 'Pickaxe': return <Pickaxe className="w-5 h-5 text-[#591CC9]" />;
+      case 'Signal': return <Signal className="w-5 h-5 text-[#591CC9]" />;
+      case 'Landmark': return <Landmark className="w-5 h-5 text-[#591CC9]" />;
+      case 'Building2': return <Building2 className="w-5 h-5 text-[#591CC9]" />;
+      case 'Zap': return <Zap className="w-5 h-5 text-[#591CC9]" />;
+      case 'ShoppingBag': return <ShoppingBag className="w-5 h-5 text-[#591CC9]" />;
+      default: return <Building2 className="w-5 h-5 text-[#591CC9]" />;
     }
   };
 
@@ -36,11 +36,11 @@ export const SectorsSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-widest">
             Cobertura Multisectorial
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Especialización por <span className="text-gradient-cyan">Sector Económico</span>
+            Especialización por <span className="text-[#591CC9]">Sector Económico</span>
           </h2>
           <p className="text-white/85 text-base leading-relaxed font-medium">
             Adaptamos la arquitectura de red y ciberseguridad a la realidad operativa y exigencias regulatorias de cada industria.
@@ -62,12 +62,10 @@ export const SectorsSection: React.FC = () => {
                     : 'bg-[#021C33] border border-[#591CC9]/50 text-white/80 hover:bg-[#05477D] hover:text-white'
                 }`}
               >
-                <div className={`p-2.5 rounded-xl ${
-                  isSelected ? 'bg-[#021C33] border border-[#FFD303]/50' : 'bg-[#05477D]/60 border border-[#591CC9]/40'
-                }`}>
+                <div className={`p-2.5 rounded-xl bg-white border border-white shadow-md ${isSelected ? 'scale-110' : ''} transition-transform`}>
                   {getSectorIcon(sector.iconName)}
                 </div>
-                <span className={`text-xs font-bold ${isSelected ? 'text-[#FFD303]' : 'text-white'}`}>
+                <span className={`text-xs font-bold ${isSelected ? 'text-[#591CC9]' : 'text-white'}`}>
                   {sector.name}
                 </span>
               </button>
@@ -83,14 +81,14 @@ export const SectorsSection: React.FC = () => {
             <div className="lg:col-span-7 space-y-6">
               
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-2xl bg-[#021C33] border border-[#591CC9] text-[#FFD303]">
+                <div className="p-3 rounded-2xl bg-white border border-white text-[#591CC9] shadow-md">
                   {getSectorIcon(selectedSector.iconName)}
                 </div>
                 <div>
                   <h3 className="text-2xl font-black text-white">
                     {selectedSector.name}
                   </h3>
-                  <p className="text-xs text-[#FFD303] font-bold uppercase tracking-wider">
+                  <p className="text-xs text-[#591CC9] font-bold uppercase tracking-wider">
                     Soluciones de Misión Crítica
                   </p>
                 </div>
@@ -105,8 +103,8 @@ export const SectorsSection: React.FC = () => {
                 
                 {/* Challenges */}
                 <div className="space-y-3 bg-[#021C33] p-5 rounded-2xl border border-[#591CC9]/70">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#FFD303] uppercase tracking-wider">
-                    <AlertTriangle className="w-4 h-4 text-[#FFD303]" />
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#591CC9] uppercase tracking-wider">
+                    <AlertTriangle className="w-4 h-4 text-[#591CC9]" />
                     <span>Desafíos del Sector</span>
                   </div>
                   <ul className="space-y-2 text-xs text-white/85">
@@ -120,15 +118,15 @@ export const SectorsSection: React.FC = () => {
                 </div>
 
                 {/* Solutions */}
-                <div className="space-y-3 bg-[#021C33] p-5 rounded-2xl border border-[#FFD303]/40">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#FFD303] uppercase tracking-wider">
-                    <CheckCircle2 className="w-4 h-4 text-[#FFD303]" />
+                <div className="space-y-3 bg-[#021C33] p-5 rounded-2xl border border-[#591CC9]/70">
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#591CC9] uppercase tracking-wider">
+                    <CheckCircle2 className="w-4 h-4 text-[#591CC9]" />
                     <span>Respuesta HIWAY</span>
                   </div>
                   <ul className="space-y-2 text-xs text-white/85">
                     {selectedSector.solutionsProvided.map((s, i) => (
                       <li key={i} className="flex items-start gap-2 font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#FFD303] mt-1.5 shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#591CC9] mt-1.5 shrink-0" />
                         <span>{s}</span>
                       </li>
                     ))}
@@ -149,7 +147,7 @@ export const SectorsSection: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 {selectedSector.metrics.map((metric, mIdx) => (
                   <div key={mIdx} className="p-4 rounded-xl bg-[#05477D] border border-[#591CC9]/60 shadow-sm text-center">
-                    <div className="text-3xl font-black text-[#FFD303]">{metric.value}</div>
+                    <div className="text-3xl font-black text-[#591CC9]">{metric.value}</div>
                     <div className="text-[11px] text-white/80 mt-1 font-semibold">{metric.label}</div>
                   </div>
                 ))}

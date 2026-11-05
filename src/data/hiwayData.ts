@@ -44,6 +44,8 @@ export interface AlliancePartner {
   name: string;
   tier?: string;
   category: string;
+  logo?: string;
+  invertOnDark?: boolean;
 }
 
 export const HIWAY_COMPANY_INFO = {
@@ -97,13 +99,16 @@ export const HIWAY_COMPANY_INFO = {
   ],
 
   alliances: [
-    { name: "Cisco", tier: "Partner", category: "Redes & Telepresencia" },
-    { name: "Fortinet", tier: "Security Partner", category: "Ciberseguridad & Firewalls" },
-    { name: "SV Links", tier: "Technology Partner", category: "Conectividad & Enlaces" },
-    { name: "Bufete de Soluciones Integrales S.C.", tier: "Strategic Alliance", category: "Consultoría & Cumplimiento" },
-    { name: "Archer", tier: "Enterprise Partner", category: "Gestión de Riesgo & GRC" },
-    { name: "Microsoft", tier: "Cloud Partner", category: "Cloud & Colaboración" },
-    { name: "Trellix", tier: "Cyber Partner", category: "Seguridad de Endpoint & XDR" }
+    { name: "Ofimundo", tier: "Grupo Empresarial", category: "Ecosistema Corporativo", logo: "/logos/ofimundo.png?v=9" },
+    { name: "Dreamtec", tier: "Filial Estratégica", category: "Soluciones de Impresión & Digital", logo: "/logos/dreamtec.png?v=9" },
+    { name: "Global Horizon", tier: "Filial Estratégica", category: "Infraestructura & Conectividad", logo: "/logos/global.png?v=9" },
+    { name: "Cisco", tier: "Partner", category: "Redes & Telepresencia", logo: "/logos/partners/cisco-white.png?v=5" },
+    { name: "Fortinet", tier: "Security Partner", category: "Ciberseguridad & Firewalls", logo: "/logos/partners/fortinet-white.png?v=5" },
+    { name: "Microsoft", tier: "Cloud Partner", category: "Cloud & Colaboración", logo: "/logos/partners/microsoft-white.png?v=5" },
+    { name: "Trellix", tier: "Cyber Partner", category: "Endpoint & XDR", logo: "/logos/partners/trellix-white.png?v=5" },
+    { name: "Archer", tier: "Enterprise Partner", category: "Gestión de Riesgo & GRC", logo: "/logos/partners/archer-white.png?v=5" },
+    { name: "SV Links", tier: "Technology Partner", category: "Conectividad & Enlaces", logo: "/logos/partners/svlinks-white.png?v=5" },
+    { name: "Bufete de Soluciones Integrales", tier: "Strategic Alliance", category: "Consultoría & Cumplimiento", logo: "/logos/partners/bufete-white.png?v=5" }
   ],
 
   certifications: [

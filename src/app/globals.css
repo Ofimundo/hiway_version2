@@ -4,13 +4,13 @@
   --bg-space: #05335C;
   --bg-deep: #021C33;
   --bg-card: #05477D;
-  --border-accent: rgba(255, 211, 3, 0.35);
+  --border-accent: rgba(89, 28, 201, 0.45);
   --border-purple: rgba(89, 28, 201, 0.45);
   --hiway-navy: #05335C;
   --hiway-deep-navy: #021C33;
   --hiway-blue: #05477D;
-  --hiway-yellow: #FFD303;
   --hiway-purple: #591CC9;
+  --hiway-accent: #591CC9;
   --hiway-white: #FFFFFF;
 }
 
@@ -21,9 +21,9 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Thin Horizontal Gradient Line (Yellow -> Purple) */
+/* Thin Horizontal Purple Accent Line (#591CC9) */
 .line-gradient-accent {
-  background: linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
+  background: #591CC9;
 }
 
 /* Glassmorphism & Card Utility Classes */
@@ -39,18 +39,18 @@ html, body {
 
 .glass-panel-hover:hover {
   transform: translateY(-3px);
-  border-color: rgba(255, 211, 3, 0.5);
+  border-color: rgba(89, 28, 201, 0.6);
   box-shadow: 0 16px 36px -4px rgba(2, 28, 51, 0.65);
 }
 
-/* Azul Medio Cards with Yellow -> Purple Thin Gradient Border Lines */
+/* Azul Medio Cards with Purple #591CC9 Border Lines */
 .gradient-border-box {
   background: #05477D;
   color: #FFFFFF;
   border-radius: 1.75rem;
   padding: 2.25rem 2rem;
   border: 1.5px solid transparent;
-  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
+  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #7C3AED 0%, #591CC9 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   box-shadow: 0 14px 36px -6px rgba(2, 28, 51, 0.55);
@@ -59,7 +59,7 @@ html, body {
 
 .gradient-border-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 22px 46px -8px rgba(2, 28, 51, 0.75), 0 0 20px -4px rgba(255, 211, 3, 0.2);
+  box-shadow: 0 22px 46px -8px rgba(2, 28, 51, 0.75), 0 0 20px -4px rgba(89, 28, 201, 0.3);
 }
 
 .gradient-border-box-emerald {
@@ -68,7 +68,7 @@ html, body {
   border-radius: 1.75rem;
   padding: 2.25rem 2rem;
   border: 1.5px solid transparent;
-  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #591CC9 0%, #FFD303 100%);
+  background-image: linear-gradient(#05477D, #05477D), linear-gradient(90deg, #591CC9 0%, #7C3AED 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   box-shadow: 0 14px 36px -6px rgba(2, 28, 51, 0.55);
@@ -84,7 +84,7 @@ html, body {
 .card-gradient-blue-emerald {
   background: linear-gradient(135deg, #021C33 0%, #05335C 50%, #05477D 100%);
   color: #FFFFFF !important;
-  border: 1px solid rgba(255, 211, 3, 0.3);
+  border: 1px solid rgba(89, 28, 201, 0.4);
   box-shadow: 0 12px 32px -4px rgba(2, 28, 51, 0.5);
 }
 
@@ -121,19 +121,19 @@ html, body {
   pointer-events: none;
 }
 
-/* Hiway Brand CTA Button Utility (Amarillo #FFD303 para botones/CTA) */
+/* Hiway Brand CTA Button Utility (Morado #591CC9 para botones/CTA) */
 .btn-gradient {
-  background: #FFD303;
-  color: #021C33 !important;
+  background: #591CC9;
+  color: #FFFFFF !important;
   font-weight: 800;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 18px 0 rgba(255, 211, 3, 0.28);
+  box-shadow: 0 4px 18px 0 rgba(89, 28, 201, 0.4);
 }
 
 .btn-gradient:hover {
-  background: #ffe033;
-  color: #021C33 !important;
-  box-shadow: 0 6px 24px 0 rgba(255, 211, 3, 0.45);
+  background: #6D28D9;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 24px 0 rgba(89, 28, 201, 0.55);
   transform: translateY(-1px);
 }
 
@@ -153,13 +153,13 @@ html, body {
   transform: translateY(-1px);
 }
 
-/* Highlighted Headline Text Utilities (Amarillo #FFD303) */
+/* Highlighted Headline Text Utilities (Morado #591CC9) */
 .text-gradient-cyan {
-  color: #FFD303;
+  color: #591CC9;
 }
 
 .text-gradient-green {
-  background: linear-gradient(90deg, #FFD303 0%, #591CC9 100%);
+  background: linear-gradient(90deg, #A87FFB 0%, #591CC9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -179,6 +179,6 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFD303;
+  background: #591CC9;
 }
 

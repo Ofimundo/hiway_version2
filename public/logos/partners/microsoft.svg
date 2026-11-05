@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" fill="none">
+  <g fill="#FFFFFF" transform="translate(6, 6)">
+    <rect x="0" y="0" width="17" height="17"/>
+    <rect x="21" y="0" width="17" height="17"/>
+    <rect x="0" y="21" width="17" height="17"/>
+    <rect x="21" y="21" width="17" height="17"/>
+  </g>
+  <text x="56" y="32" fill="#FFFFFF" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-weight="600" font-size="23" letter-spacing="-0.3px">Microsoft</text>
+</svg>

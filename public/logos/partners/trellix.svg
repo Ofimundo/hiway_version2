@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <g fill="#FFFFFF" transform="translate(6, 7)">
+    <polygon points="0,32 16,4 32,4 16,32"/>
+    <polygon points="20,32 28,18 36,18 28,32" opacity="0.85"/>
+  </g>
+  <text x="52" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-weight="700" font-size="24" letter-spacing="0.5px">Trellix</text>
+</svg>

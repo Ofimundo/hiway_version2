@@ -85,7 +85,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#05335C] text-white flex flex-col selection:bg-[#FFD303] selection:text-[#021C33]">
+    <main className="min-h-screen bg-[#05335C] text-white flex flex-col selection:bg-[#591CC9] selection:text-white">
       
       {/* Fixed Top Navbar */}
       <Navbar onOpenBrochureModal={handleOpenBrochureModal} />
@@ -98,12 +98,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           
           <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#05477D] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-widest">
-              <Sparkles className="w-4 h-4 text-[#FFD303]" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#05477D] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-widest">
+              <Sparkles className="w-4 h-4 text-white" />
               Navegación por Áreas
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              Explora Nuestras <span className="text-gradient-cyan">Especialidades</span>
+              Explora Nuestras <span className="text-[#591CC9]">Especialidades</span>
             </h2>
             <p className="text-white/85 text-base sm:text-lg leading-relaxed font-medium">
               Accede a información detallada en páginas dedicadas para cada uno de nuestros pilares de servicio corporativo.
@@ -122,16 +122,16 @@ export default function Home() {
                     
                     {/* Header Icon & Badge */}
                     <div className="flex items-center justify-between">
-                      <div className="w-14 h-14 rounded-2xl bg-[#021C33] border border-[#591CC9] flex items-center justify-center text-[#FFD303] group-hover:scale-110 transition-transform shadow-sm">
+                      <div className="w-14 h-14 rounded-2xl bg-white border border-white flex items-center justify-center text-[#591CC9] group-hover:scale-110 transition-transform shadow-md">
                         <IconComponent className="w-7 h-7" />
                       </div>
-                      <span className="px-3 py-1 text-[11px] font-bold text-[#FFD303] bg-[#021C33] border border-[#591CC9]/80 rounded-full uppercase tracking-wider">
+                      <span className="px-3 py-1 text-[11px] font-bold text-white bg-[#021C33] border border-[#591CC9]/80 rounded-full uppercase tracking-wider">
                         {card.badge}
                       </span>
                     </div>
 
                     {/* Card Title */}
-                    <h3 className="text-2xl font-black text-white group-hover:text-[#FFD303] transition-colors pt-1">
+                    <h3 className="text-2xl font-black text-white group-hover:text-[#591CC9] transition-colors pt-1">
                       {card.title}
                     </h3>
 
@@ -165,36 +165,44 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="gradient-border-box p-8 sm:p-12 text-center space-y-10">
             <div className="space-y-3 max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#021C33] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-wider">
-                <Handshake className="w-4 h-4 text-[#FFD303]" />
+              <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#021C33] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-wider">
+                <Handshake className="w-4 h-4 text-white" />
                 Ecosistema Global de Partners
               </div>
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                En Hiway contamos con las <span className="text-gradient-cyan">mejores alianzas</span>
+                En Hiway contamos con las <span className="text-[#591CC9]">mejores alianzas</span>
               </h3>
               <p className="text-sm text-white/85 font-medium leading-relaxed">
                 Colaboramos con los líderes tecnológicos mundiales en ciberseguridad, redes y nube para entregar soluciones de grado empresarial.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 pt-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-2">
               {HIWAY_COMPANY_INFO.alliances.map((partner, aIdx) => (
                 <div 
                   key={aIdx} 
-                  className="p-5 rounded-2xl bg-[#021C33] border border-[#591CC9]/60 hover:border-[#FFD303] hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-2 group"
+                  className="p-5 rounded-2xl bg-[#021C33] border border-[#591CC9]/60 hover:border-[#591CC9] hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-3 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-[#05477D] border border-[#591CC9]/60 group-hover:border-[#FFD303] flex items-center justify-center shadow-sm">
-                    <ShieldCheck className="w-6 h-6 text-[#FFD303] group-hover:scale-110 transition-transform" />
+                  <div className="w-full h-16 rounded-xl bg-transparent border border-[#591CC9]/80 group-hover:border-[#591CC9] group-hover:scale-105 flex items-center justify-center transition-all px-4 py-2">
+                    {partner.logo ? (
+                      <img 
+                        src={partner.logo} 
+                        alt={partner.name} 
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    ) : (
+                      <ShieldCheck className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                    )}
                   </div>
-                  <div className="text-sm font-black text-white tracking-wide font-mono group-hover:text-[#FFD303] transition-colors">
+                  <div className="text-sm font-black text-white tracking-wide font-mono group-hover:text-[#591CC9] transition-colors text-center">
                     {partner.name}
                   </div>
                   {partner.tier && (
-                    <span className="text-[9px] font-bold text-[#FFD303] bg-[#591CC9]/30 px-2 py-0.5 rounded border border-[#591CC9]">
+                    <span className="text-[9px] font-bold text-white bg-[#591CC9]/60 px-2 py-0.5 rounded border border-[#591CC9] text-center">
                       {partner.tier}
                     </span>
                   )}
-                  <span className="text-[9px] text-white/70 font-medium truncate max-w-full">
+                  <span className="text-[9px] text-white/70 font-medium truncate max-w-full text-center">
                     {partner.category}
                   </span>
                 </div>

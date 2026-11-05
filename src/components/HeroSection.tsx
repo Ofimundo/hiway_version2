@@ -26,18 +26,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBrochureModal })
         <div className="max-w-4xl mx-auto space-y-8">
           
           {/* Top Tagline Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#05477D] border border-[#FFD303]/40 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#05477D] border border-[#591CC9]/80 shadow-sm">
             <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFD303] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FFD303]" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#591CC9] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#591CC9]" />
             </span>
-            <span className="text-xs font-bold text-[#FFD303] tracking-wide uppercase">
+            <span className="text-xs font-bold text-white tracking-wide uppercase">
               {HIWAY_COMPANY_INFO.hashtag} · Soluciones Digitales Innovadoras
             </span>
-            <Sparkles className="w-4 h-4 text-[#FFD303] ml-1" />
+            <Sparkles className="w-4 h-4 text-white ml-1" />
           </div>
 
-          {/* Main Headline (White on Navy #05335C with Yellow #FFD303 Highlight) */}
+          {/* Main Headline (White on Navy #05335C with Purple #591CC9 Highlight) */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
             {HIWAY_COMPANY_INFO.heroHeadline} <br className="hidden sm:inline" />
             <span className="text-gradient-cyan">Soluciones Digitales Tecnológicas</span>
@@ -48,7 +48,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBrochureModal })
             {HIWAY_COMPANY_INFO.heroSubheadline}
           </p>
 
-          {/* Action Buttons in Yellow Accent (#FFD303) */}
+          {/* Action Buttons in Purple Accent (#591CC9) */}
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <a
               href="/contacto"

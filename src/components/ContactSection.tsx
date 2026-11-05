@@ -74,11 +74,11 @@ export const ContactSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-widest">
             Atención Especializada
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Conversemos con un <span className="text-gradient-cyan">Consultor</span>
+            Conversemos con un <span className="text-[#591CC9]">Consultor</span>
           </h2>
           <p className="text-white/85 text-base leading-relaxed font-medium">
             Completa el formulario y aclararemos todas tus dudas desde nuestra Casa Matriz en Chile o filial México.
@@ -90,10 +90,10 @@ export const ContactSection: React.FC = () => {
           {/* Left Form Container: Azul Medio Card (#05477D) - Temporarily Disabled */}
           <div className="lg:col-span-7 gradient-border-box p-6 sm:p-10 relative">
             
-            <div className="mb-6 p-4 rounded-xl bg-[#021C33] border border-[#FFD303]/50 flex items-center justify-between gap-3">
+            <div className="mb-6 p-4 rounded-xl bg-[#021C33] border border-[#591CC9]/80 flex items-center justify-between gap-3">
               <div className="text-xs text-white/90 font-medium">
-                <strong className="text-[#FFD303] block mb-0.5">Formulario temporalmente inhabilitado</strong>
-                Por el momento, puedes contactarnos directamente a <a href={`mailto:${HIWAY_COMPANY_INFO.emailHQ}`} className="text-[#FFD303] underline font-bold">{HIWAY_COMPANY_INFO.emailHQ}</a> o al teléfono <a href="tel:+56229407500" className="text-[#FFD303] underline font-bold">{HIWAY_COMPANY_INFO.phoneHQ}</a>.
+                <strong className="text-[#591CC9] block mb-0.5">Formulario temporalmente inhabilitado</strong>
+                Por el momento, puedes contactarnos directamente a <a href={`mailto:${HIWAY_COMPANY_INFO.emailHQ}`} className="text-[#591CC9] underline font-bold">{HIWAY_COMPANY_INFO.emailHQ}</a> o al teléfono <a href="tel:+56229407500" className="text-[#591CC9] underline font-bold">{HIWAY_COMPANY_INFO.phoneHQ}</a>.
               </div>
             </div>
 
@@ -188,7 +188,7 @@ export const ContactSection: React.FC = () => {
 
                 <div className="flex items-center justify-between pt-2">
                   <div className="flex items-center gap-1.5 text-[11px] text-white/75 font-medium">
-                    <ShieldCheck className="w-4 h-4 text-[#FFD303]" />
+                    <ShieldCheck className="w-4 h-4 text-white" />
                     <span>Formulario temporalmente deshabilitado</span>
                   </div>
 
@@ -213,12 +213,14 @@ export const ContactSection: React.FC = () => {
             {OFFICES.map((office) => (
               <div key={office.city} className="gradient-border-box p-6 space-y-3">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-white font-bold text-base">
-                    <Building className="w-4 h-4 text-[#FFD303]" />
+                  <div className="flex items-center gap-2.5 text-white font-bold text-base">
+                    <div className="w-8 h-8 rounded-lg bg-white border border-white flex items-center justify-center text-[#591CC9] shadow-sm">
+                      <Building className="w-4 h-4" />
+                    </div>
                     <span>{office.isHQ ? 'Casa Matriz' : 'Filial México'}</span>
                   </div>
                   {office.isHQ && (
-                    <span className="px-2 py-0.5 text-[9px] font-bold text-[#FFD303] bg-[#021C33] border border-[#591CC9] rounded uppercase">
+                    <span className="px-2 py-0.5 text-[9px] font-bold text-white bg-[#591CC9] border border-[#591CC9] rounded uppercase">
                       Santiago, Chile
                     </span>
                   )}
@@ -226,16 +228,16 @@ export const ContactSection: React.FC = () => {
 
                 <div className="space-y-2 text-xs text-white/85 pt-1 font-medium">
                   <div className="flex items-start gap-2">
-                    <MapPin className="w-4 h-4 text-[#FFD303] shrink-0 mt-0.5" />
+                    <MapPin className="w-4 h-4 text-white/70 shrink-0 mt-0.5" />
                     <span>Ubicación: {office.address}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#FFD303] shrink-0" />
-                    <span>Teléfono: <a href={`tel:${office.phone.replace(/\s+/g, '')}`} className="text-[#FFD303] hover:underline font-bold font-mono">{office.phone}</a></span>
+                    <Phone className="w-4 h-4 text-white/70 shrink-0" />
+                    <span>Teléfono: <a href={`tel:${office.phone.replace(/\s+/g, '')}`} className="text-white hover:underline font-bold font-mono">{office.phone}</a></span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[#FFD303] shrink-0" />
-                    <span>Correo: <a href={`mailto:${office.email}`} className="text-[#FFD303] hover:underline font-bold font-mono">{office.email}</a></span>
+                    <Mail className="w-4 h-4 text-white/70 shrink-0" />
+                    <span>Correo: <a href={`mailto:${office.email}`} className="text-white hover:underline font-bold font-mono">{office.email}</a></span>
                   </div>
                 </div>
               </div>
@@ -243,14 +245,16 @@ export const ContactSection: React.FC = () => {
 
             {/* Service Desk 24/7 Box */}
             <div className="gradient-border-box p-6 space-y-3">
-              <div className="flex items-center gap-2 text-[#FFD303] font-bold text-base">
-                <Headphones className="w-5 h-5 text-[#FFD303]" />
+              <div className="flex items-center gap-2.5 text-white font-bold text-base">
+                <div className="w-8 h-8 rounded-lg bg-white border border-white flex items-center justify-center text-[#591CC9] shadow-sm">
+                  <Headphones className="w-4 h-4" />
+                </div>
                 <span>Mesa de Servicios 24/7</span>
               </div>
               <div className="space-y-1.5 text-xs text-white/85 font-medium">
-                <div>Teléfono: <a href="tel:+56229407502" className="text-[#FFD303] hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.phoneSupport}</a></div>
-                <div>Celular: <a href="tel:+56942551631" className="text-[#FFD303] hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.mobileSupport}</a></div>
-                <div>Correo: <a href={`mailto:${HIWAY_COMPANY_INFO.emailSupport}`} className="text-[#FFD303] hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.emailSupport}</a></div>
+                <div>Teléfono: <a href="tel:+56229407502" className="text-white hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.phoneSupport}</a></div>
+                <div>Celular: <a href="tel:+56942551631" className="text-white hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.mobileSupport}</a></div>
+                <div>Correo: <a href={`mailto:${HIWAY_COMPANY_INFO.emailSupport}`} className="text-white hover:underline font-bold font-mono">{HIWAY_COMPANY_INFO.emailSupport}</a></div>
               </div>
             </div>
 

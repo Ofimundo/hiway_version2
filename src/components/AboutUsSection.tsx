@@ -25,12 +25,12 @@ export const AboutUsSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5 text-[#FFD303]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#05477D] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-widest">
+            <Sparkles className="w-3.5 h-3.5 text-white" />
             Quiénes Somos
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Construcción Conjunta de <span className="text-gradient-cyan">Valor & Diferenciación</span>
+            Construcción Conjunta de <span className="text-[#591CC9]">Valor & Diferenciación</span>
           </h2>
           <p className="text-white/85 text-base leading-relaxed max-w-2xl mx-auto font-medium">
             Utilizamos la tecnología como motor de transformación para generar operaciones de alto rendimiento en toda la región.
@@ -43,12 +43,12 @@ export const AboutUsSection: React.FC = () => {
           {/* Misión */}
           <div className="gradient-border-box p-8 sm:p-10 relative group">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#021C33] border border-[#591CC9] flex items-center justify-center text-[#FFD303] shrink-0 group-hover:scale-110 transition-transform shadow-sm">
+              <div className="w-14 h-14 rounded-2xl bg-white border border-white flex items-center justify-center text-[#591CC9] shrink-0 group-hover:scale-110 transition-transform shadow-md">
                 <Target className="w-7 h-7" />
               </div>
               <div>
                 <h3 className="text-2xl font-black text-white">Nuestra Misión</h3>
-                <p className="text-xs text-[#FFD303] font-bold uppercase tracking-wider">Transformación Digital</p>
+                <p className="text-xs text-[#591CC9] font-bold uppercase tracking-wider">Transformación Digital</p>
               </div>
             </div>
             <p className="text-white/85 text-sm leading-relaxed font-medium">
@@ -59,12 +59,12 @@ export const AboutUsSection: React.FC = () => {
           {/* Visión */}
           <div className="gradient-border-box p-8 sm:p-10 relative group">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#021C33] border border-[#591CC9] flex items-center justify-center text-[#FFD303] shrink-0 group-hover:scale-110 transition-transform shadow-sm">
+              <div className="w-14 h-14 rounded-2xl bg-white border border-white flex items-center justify-center text-[#591CC9] shrink-0 group-hover:scale-110 transition-transform shadow-md">
                 <Eye className="w-7 h-7" />
               </div>
               <div>
                 <h3 className="text-2xl font-black text-white">Nuestra Visión</h3>
-                <p className="text-xs text-[#FFD303] font-bold uppercase tracking-wider">Liderazgo Regional Latam</p>
+                <p className="text-xs text-[#591CC9] font-bold uppercase tracking-wider">Liderazgo Regional Latam</p>
               </div>
             </div>
             <p className="text-white/85 text-sm leading-relaxed font-medium">
@@ -87,7 +87,7 @@ export const AboutUsSection: React.FC = () => {
                 key={idx} 
                 className="gradient-border-box p-6 space-y-3"
               >
-                <div className="w-9 h-9 rounded-xl bg-[#021C33] border border-[#591CC9] text-[#FFD303] flex items-center justify-center text-xs font-black font-mono shadow-sm">
+                <div className="w-9 h-9 rounded-xl bg-white border border-white text-[#591CC9] flex items-center justify-center text-xs font-black font-mono shadow-md">
                   0{idx + 1}
                 </div>
                 <h4 className="text-lg font-bold text-white">{val.title}</h4>
@@ -105,8 +105,8 @@ export const AboutUsSection: React.FC = () => {
               className="gradient-border-box p-8 space-y-4"
             >
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-2xl bg-[#021C33] border border-[#591CC9] text-[#FFD303]">
-                  {pIdx === 0 ? <Users className="w-6 h-6" /> : <TrendingUp className="w-6 h-6 text-[#FFD303]" />}
+                <div className="p-3 rounded-2xl bg-white border border-white text-[#591CC9] shadow-md">
+                  {pIdx === 0 ? <Users className="w-6 h-6" /> : <TrendingUp className="w-6 h-6 text-[#591CC9]" />}
                 </div>
                 <h4 className="text-xl font-bold text-white">{pillar.title}</h4>
               </div>
@@ -120,36 +120,44 @@ export const AboutUsSection: React.FC = () => {
         {/* Strategic Alliances Showcase */}
         <div className="gradient-border-box p-8 sm:p-10 space-y-8 text-center">
           <div className="space-y-2 max-w-2xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#021C33] border border-[#FFD303]/40 text-xs font-bold text-[#FFD303] uppercase tracking-wider">
-              <Handshake className="w-3.5 h-3.5 text-[#FFD303]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#021C33] border border-[#591CC9]/80 text-xs font-bold text-white uppercase tracking-wider">
+              <Handshake className="w-3.5 h-3.5 text-white" />
               Ecosistema Global de Partners
             </div>
             <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-              En Hiway contamos con las <span className="text-gradient-cyan">mejores alianzas</span>
+              En Hiway contamos con las <span className="text-[#591CC9]">mejores alianzas</span>
             </h3>
             <p className="text-xs text-white/80 font-medium">
               Colaboramos con los líderes tecnológicos mundiales en ciberseguridad, redes y nube para entregar soluciones de grado empresarial.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 pt-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-2">
             {HIWAY_COMPANY_INFO.alliances.map((partner, aIdx) => (
               <div 
                 key={aIdx} 
-                className="p-5 rounded-2xl bg-[#021C33] border border-[#591CC9]/60 hover:border-[#FFD303] hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-2 group"
+                className="p-5 rounded-2xl bg-[#021C33] border border-[#591CC9]/60 hover:border-[#591CC9] hover:shadow-md transition-all duration-200 flex flex-col items-center justify-center space-y-3 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#05477D] border border-[#591CC9]/60 group-hover:border-[#FFD303] flex items-center justify-center shadow-sm">
-                  <ShieldCheck className="w-5 h-5 text-[#FFD303] group-hover:scale-110 transition-transform" />
+                <div className="w-full h-16 rounded-xl bg-transparent border border-[#591CC9]/80 group-hover:border-[#591CC9] group-hover:scale-105 flex items-center justify-center transition-all px-4 py-2">
+                  {partner.logo ? (
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name} 
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  ) : (
+                    <ShieldCheck className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                  )}
                 </div>
-                <div className="text-sm font-black text-white tracking-wide font-mono group-hover:text-[#FFD303] transition-colors">
+                <div className="text-sm font-black text-white tracking-wide font-mono group-hover:text-[#591CC9] transition-colors text-center">
                   {partner.name}
                 </div>
                 {partner.tier && (
-                  <span className="text-[9px] font-bold text-[#FFD303] bg-[#591CC9]/30 px-2 py-0.5 rounded border border-[#591CC9]">
+                  <span className="text-[9px] font-bold text-white bg-[#591CC9]/60 px-2.5 py-0.5 rounded border border-[#591CC9]">
                     {partner.tier}
                   </span>
                 )}
-                <span className="text-[9px] text-white/70 font-medium truncate max-w-full">
+                <span className="text-[10px] text-white/70 font-medium truncate max-w-full text-center">
                   {partner.category}
                 </span>
               </div>
@@ -161,15 +169,15 @@ export const AboutUsSection: React.FC = () => {
         <div className="gradient-border-box p-8 sm:p-10 space-y-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-[#021C33] border border-[#591CC9] text-[#FFD303]">
+              <div className="p-3 rounded-2xl bg-white border border-white text-[#591CC9] shadow-md">
                 <Video className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[#FFD303] uppercase tracking-widest font-bold">Caso de Éxito Destacado</span>
+                <span className="text-[10px] font-mono text-[#591CC9] uppercase tracking-widest font-bold">Caso de Éxito Destacado</span>
                 <h4 className="text-2xl font-black text-white">{HIWAY_COMPANY_INFO.caseStudy.client}</h4>
               </div>
             </div>
-            <span className="px-3.5 py-1 text-[11px] font-bold text-[#FFD303] bg-[#021C33] border border-[#591CC9] rounded-full">
+            <span className="px-3.5 py-1 text-[11px] font-bold text-white bg-[#021C33] border border-[#591CC9] rounded-full">
               Cisco + HIWAY
             </span>
           </div>
@@ -181,7 +189,7 @@ export const AboutUsSection: React.FC = () => {
             </div>
 
             <div className="p-5 rounded-2xl bg-[#021C33] border border-[#591CC9]/50 space-y-2">
-              <div className="font-bold text-[#FFD303] text-sm">Impacto en la Operación</div>
+              <div className="font-bold text-[#591CC9] text-sm">Impacto en la Operación</div>
               <p className="text-white/85 leading-relaxed font-medium">{HIWAY_COMPANY_INFO.caseStudy.impact}</p>
             </div>
           </div>

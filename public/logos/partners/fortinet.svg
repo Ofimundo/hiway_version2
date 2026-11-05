@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" fill="none">
+  <!-- Fortinet Mark in Pure White -->
+  <g fill="#FFFFFF" transform="translate(6, 6)">
+    <rect x="0" y="0" width="8" height="8" rx="1.5"/>
+    <rect x="11" y="0" width="16" height="8" rx="1.5"/>
+    <rect x="30" y="0" width="8" height="8" rx="1.5"/>
+    
+    <rect x="0" y="11" width="16" height="8" rx="1.5"/>
+    <rect x="19" y="11" width="8" height="8" rx="1.5"/>
+    <rect x="30" y="11" width="8" height="8" rx="1.5"/>
+
+    <rect x="0" y="22" width="8" height="8" rx="1.5"/>
+    <rect x="11" y="22" width="8" height="8" rx="1.5"/>
+    <rect x="22" y="22" width="16" height="8" rx="1.5"/>
+
+    <rect x="0" y="30" width="8" height="6" rx="1.5"/>
+    <rect x="30" y="30" width="8" height="6" rx="1.5"/>
+  </g>
+  <!-- Fortinet Wordmark in Pure White -->
+  <text x="56" y="33" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="2px">FORTINET</text>
+</svg>
