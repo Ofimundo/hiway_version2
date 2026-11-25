@@ -112,7 +112,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onOpenBrochu
                 </div>
 
                 {/* Title & Subtitle */}
-                <h3 className="text-xl font-black text-white mb-2 group-hover:text-[#591CC9] transition-colors">
+                <h3 className="text-xl font-black text-white mb-2">
                   {service.title}
                 </h3>
                 <p className="text-xs font-bold text-[#591CC9] mb-4">

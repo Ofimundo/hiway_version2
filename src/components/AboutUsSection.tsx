@@ -125,7 +125,7 @@ export const AboutUsSection: React.FC = () => {
               Ecosistema Global de Partners
             </div>
             <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-              En Hiway contamos con las <span className="text-[#591CC9]">mejores alianzas</span>
+              En Hiway contamos con las mejores alianzas
             </h3>
             <p className="text-xs text-white/80 font-medium">
               Colaboramos con los líderes tecnológicos mundiales en ciberseguridad, redes y nube para entregar soluciones de grado empresarial.
@@ -149,7 +149,7 @@ export const AboutUsSection: React.FC = () => {
                     <ShieldCheck className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                   )}
                 </div>
-                <div className="text-sm font-black text-white tracking-wide font-mono group-hover:text-[#591CC9] transition-colors text-center">
+                <div className="text-sm font-black text-white tracking-wide font-mono text-center">
                   {partner.name}
                 </div>
                 {partner.tier && (
